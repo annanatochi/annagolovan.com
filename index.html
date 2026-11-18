@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anna Golovan Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Editorial poster world: Soft Sand page, Mocha Green ink, Watermelon Pink accent. Huge condensed type, pink spotlight on Work with me, quiet Coming soon at the end. Single column, phone first. */
+  --sand: #f0e5db;
+  --mocha: #474329;
+  --mocha-soft: #6b6646;
+  --pink: #fc75b4;
+  --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --script: "Caveat", "Bradley Hand", cursive;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--sand); color: var(--mocha); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+main { max-width: 480px; margin: 0 auto; padding: 26px 18px 34px; display: flex; flex-direction: column; gap: 30px; }
+.label { font-size: 10.5px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.cond { font-weight: 900; font-stretch: 62%; font-variation-settings: "wdth" 62; text-transform: uppercase; }
+
+.top { display: flex; justify-content: space-between; gap: 12px; }
+.top span:first-child { border-bottom: 2px solid var(--pink); padding-bottom: 3px; }
+
+.hero { position: relative; padding-top: 6px; }
+h1 { margin: 0; font-size: clamp(60px, 24.5vw, 122px); line-height: .82; letter-spacing: -0.01em; }
+h1 span { display: block; }
+h1 .r { text-align: right; }
+.photo { position: relative; margin: 14px 0 0; }
+.photo img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.name-wrap { position: relative; }
+.sig { position: absolute; left: 40%; top: 30%; font-family: var(--script); color: var(--pink); font-size: clamp(46px, 14.5vw, 76px); font-weight: 600; line-height: 1; transform: rotate(-10deg); white-space: nowrap; pointer-events: none; }
+.stamps { display: flex; justify-content: space-between; gap: 10px; margin-top: 14px; }
+.stamps div { display: flex; flex-direction: column; gap: 4px; }
+.stamps div::after { content: ""; width: 14px; height: 2px; background: var(--pink); }
+
+.blurb { margin: 0; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; line-height: 1.5; text-align: justify; }
+.blurb::before { content: "/// "; color: var(--pink); }
+
+section { display: flex; flex-direction: column; }
+h2 { margin: 0 0 8px; }
+a.row { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 12px; padding: 14px 0 12px; border-top: 2px solid var(--mocha); color: var(--mocha); text-decoration: none; }
+.list a.row:last-child, .press a.row:last-child { border-bottom: 2px solid var(--mocha); }
+.row .t { display: block; font-size: 40px; line-height: .9; }
+.press .row .t { font-size: 30px; }
+.row .s { display: block; margin-top: 6px; }
+.row .arrow { font-size: 22px; font-weight: 700; color: var(--pink); transition: transform .2s; }
+a.row:hover .arrow { transform: translate(3px, -3px); }
+a.row:hover .t { color: var(--mocha-soft); }
+a:focus-visible { outline: 2px solid var(--mocha); outline-offset: 4px; }
+
+.brand { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 14px 0 14px; border-top: 2px solid var(--mocha); }
+.list .brand:last-child { border-bottom: 2px solid var(--mocha); }
+.brand .name { display: flex; width: 100%; justify-content: space-between; align-items: end; gap: 12px; color: var(--mocha); text-decoration: none; }
+.brand .t { font-size: 40px; line-height: .9; }
+.brand .arrow { font-size: 22px; font-weight: 700; color: var(--pink); transition: transform .2s; }
+.brand .name:hover .arrow { transform: translate(3px, -3px); }
+.brand .name:hover .t { color: var(--mocha-soft); }
+.brand .go { margin-top: 4px; background: var(--pink); color: var(--mocha); text-decoration: none; padding: 8px 14px; border-radius: 999px; font-weight: 700; }
+.brand .go:hover { background: var(--mocha); color: var(--sand); }
+.brands-h { font-family: var(--script); font-weight: 600; color: var(--pink); font-size: 48px; line-height: 1; margin: 0 0 6px; text-shadow: 0 1px 0 rgba(71,67,41,.18); }
+/* Spotlight: Work with me */
+.work { background: var(--pink); color: var(--mocha); border-radius: 4px; padding: 20px 18px 18px; display: flex; flex-direction: column; gap: 14px; position: relative; overflow: hidden; }
+.work .head { display: flex; flex-direction: column; gap: 2px; }
+.work .t { font-size: 60px; line-height: .85; }
+.work .script { margin: 0; font-family: var(--script); font-weight: 600; font-size: 38px; line-height: 1; color: var(--sand); }
+.work .note { margin: 0; font-size: 14px; line-height: 1.45; max-width: 36ch; }
+.work .lines { display: flex; flex-direction: column; }
+.work .lines a { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 11px 0; border-top: 1.5px solid var(--mocha); color: var(--mocha); text-decoration: none; }
+.work .v { font-size: 17px; font-weight: 700; font-stretch: 85%; font-variation-settings: "wdth" 85; overflow-wrap: anywhere; text-align: right; }
+.work .lines a:hover .v { color: var(--sand); }
+
+/* Quiet: Coming soon */
+.soon a.mini { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 0; border-top: 1px solid var(--mocha-soft); color: var(--mocha-soft); text-decoration: none; }
+.soon a.mini:last-child { border-bottom: 1px solid var(--mocha-soft); }
+.soon .n { font-size: 22px; line-height: 1; }
+.soon a.mini:hover .n { color: var(--mocha); }
+
+footer { display: flex; justify-content: space-between; }
+footer i { font-style: normal; color: var(--pink); }
+@media (prefers-reduced-motion: reduce) { .row .arrow { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="top label"><span>Links</span><span>Beauty founder</span><span>Texas</span></div>
+
+  <div class="hero">
+    <div class="name-wrap">
+      <h1 class="cond"><span>Anna</span><span class="r">Golovan</span></h1>
+      <div class="sig" aria-hidden="true">Founder</div>
+    </div>
+    <figure class="photo">
+      <img src="anna.jpg" alt="Anna Golovan in a light faux-fur coat and black cat-eye sunglasses" width="900" height="877">
+    </figure>
+    <div class="stamps label">
+      <div>Kyiv.<br>Est. 1988</div>
+      <div>NYC.<br>Est. 2012</div>
+      <div>Dallas.<br>Est. 2025</div>
+    </div>
+  </div>
+
+  <p class="blurb">Building a beauty empire in Texas, one brand at a time. Fifteen years in New York, a salon, a pro supply club and a nail line on the way. As seen on NBC5 DFW.</p>
+
+  <section class="list" aria-labelledby="brands">
+    <h2 id="brands" class="brands-h">My brands</h2>
+    <div class="brand">
+      <a class="name" href="https://www.instagram.com/krasa.dallas/" target="_blank" rel="noopener"><span class="t cond">Krasa Dallas</span><span class="arrow" aria-hidden="true">↗</span></a>
+      <span class="s label">Russian manicure · Ice Fusion · hair · lashes · brows</span>
+      <a class="go label" href="https://krasabeauty.studio/" target="_blank" rel="noopener">Book a visit →</a>
+    </div>
+    <div class="brand">
+      <a class="name" href="https://www.instagram.com/formulabeautyclub/" target="_blank" rel="noopener"><span class="t cond">Formula</span><span class="arrow" aria-hidden="true">↗</span></a>
+      <span class="s label">Pro supply shop &amp; club for beauty artists</span>
+      <a class="go label" href="https://formulabeauty.club/" target="_blank" rel="noopener">Shop &amp; join the club →</a>
+    </div>
+    <div class="brand">
+      <a class="name" href="https://www.instagram.com/jettercy/" target="_blank" rel="noopener"><span class="t cond">Jettercy</span><span class="arrow" aria-hidden="true">↗</span></a>
+      <span class="s label">Marketing agency</span>
+      <a class="go label" href="https://jettercy.com/" target="_blank" rel="noopener">Work with the agency →</a>
+    </div>
+  </section>
+
+  <section class="press" aria-labelledby="press">
+    <h2 id="press" class="brands-h">Interviews</h2>
+    <a class="row" href="https://www.youtube.com/watch?v=-poDIswxOJM" target="_blank" rel="noopener"><span><span class="t cond">NBC5 DFW</span><span class="s label">Dallas' hottest beauty trend: Russian manicure at KRASA Dallas</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+    <a class="row" href="https://www.youtube.com/watch?v=2xneW6yHlQ8" target="_blank" rel="noopener"><span><span class="t cond">Kristina Gasenko</span><span class="s label">Solving one salon's problem, finding the whole industry's</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+    <a class="row" href="https://www.youtube.com/watch?v=e5xxtTLBLlA" target="_blank" rel="noopener"><span><span class="t cond">The Jeff Crilley Show</span><span class="s label">Anna Golovan on building KRASA Beauty Studio</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+  </section>
+
+  <section class="work" aria-labelledby="work">
+    <div class="head">
+      <h2 id="work" class="script">let's connect</h2>
+      <span class="t cond">Collabs &amp; press</span>
+    </div>
+    <p class="note">Speaking, partnerships, brand collaborations and interviews.</p>
+    <div class="lines">
+      <a href="https://ig.me/m/annanatochi" target="_blank" rel="noopener"><span class="label">Instagram</span><span class="v">Message @annanatochi ↗</span></a>
+      <a href="mailto:anna.natochi@gmail.com"><span class="label">Email</span><span class="v">anna.natochi@gmail.com</span></a>
+      <a href="tel:+19292286875"><span class="label">Phone</span><span class="v">+1 (929) 228-6875</span></a>
+    </div>
+  </section>
+
+  <section class="soon" aria-labelledby="soon">
+    <h2 id="soon" class="brands-h">Coming soon</h2>
+    <a class="mini" href="https://www.instagram.com/krasa.phoenix/" target="_blank" rel="noopener"><span class="n cond">Krasa Phoenix</span><span class="label">@krasa.phoenix ↗</span></a>
+    <a class="mini" href="https://www.instagram.com/spelt.lab/" target="_blank" rel="noopener"><span class="n cond">Spelt, my nail line</span><span class="label">@spelt.lab ↗</span></a>
+  </section>
+
+  <footer class="label"><span>Dallas, TX</span><span><i>@</i>annanatochi</span></footer>
+</main>
+</body>
+</html>
